@@ -1,9 +1,9 @@
 ---
-title: "Allan Lab - Research"
+title: "SprintML Lab - PhDLife"
 layout: textlay
-excerpt: "Allan Lab -- Research"
+excerpt: "SpringML Lab -- PhDLife"
 sitemap: false
-permalink: /research/
+permalink: /phdlife/
 ---
 
 # Research
