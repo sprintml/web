@@ -36,6 +36,8 @@ collections:
   #     output: true
   phdlife:
     output: true
+  phdlifes:
+      output: true
 
 defaults:
   - scope:
