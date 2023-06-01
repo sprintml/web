@@ -1,0 +1,117 @@
+/* Custom CSS for the Kwiat group website. Bootstrap.css is also required. */
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.img-circle-single {
+    border-radius: 50%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    width: 175px;
+    height: 175px;
+    margin-left: 50px;
+}
+
+.people .people-container {
+    padding-top: 50px
+}
+
+.group-members a:hover .img-circle {
+    opacity: .7;
+}
+
+.people .thumbnail .img-circle {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    width: 175px;
+    height: 175px;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.category-title {
+    padding-bottom: 20px;
+}
+
+.h1 .category-title {
+    text-align: center;
+}
+
+.people .category-title {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.row {
+    padding-top: 20px;
+    /*   padding-bottom:20px; */
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align: center;
+}
+
+.col-centered {
+    display: inline-block;
+    float: none;
+    text-align: left; /* reset the text-align */
+    margin-right: -4px; /* inline-block space fix */
+}
+
+.thumbnail {
+    position: relative;
+    padding: 0;
+    border: 0;
+}
+
+.caption {
+    text-align: center;
+    width: 250px;
+}
+
+.job-title {
+    text-align: center;
+}
+
+.email {
+    text-align: center;
+}
+
+group-h1,
+group-h2,
+group-h3,
+group-h4,
+group-h5,
+group-h6,
+.group-h1,
+.group-h2,
+.group-h3,
+.group-h4,
+.group-h5,
+.group-h6 {
+    font-weight: normal;
+}
+
+.topic-links h1, .people h1 {
+    font-size: 30px;
+}
+
+.topic-links h2, .people h2 {
+    font-size: 24px;
+}
+
+.topic-links h3, .people h3 {
+    font-size: 20px;
+}
+
+.topic-links h4, .people h4 {
+    font-size: 16px;
+}
+
