@@ -27,7 +27,31 @@ lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
+collections:
+  members:
+    output: true
+  # classes:
+  #   output: true
+  #  news:
+  #     output: true
+  phdlife:
+    output: true
 
+defaults:
+  - scope:
+      path: ""
+      type: "members"
+    values:
+      layout: "member"
+  # - scope:
+  #     path: ""
+  #     type: "classes"
+  #   values:
+  #     layout: "class"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
 
 # Markdown Processing
 kramdown:
