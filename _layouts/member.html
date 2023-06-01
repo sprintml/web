@@ -1,0 +1,89 @@
+---
+layout: default
+years: [2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014]
+---
+
+{% assign member_img_path_lookup = "/assets/images/members/" | append: page.short_name | append: ".jpg" %}
+{% assign member_img_path = nil %}
+{% for static_file in site.static_files %}
+  {% if static_file.path == member_img_path_lookup %}
+      {% assign member_img_path = member_img_path_lookup %}
+  {% endif %}
+{% endfor %}
+
+<div>
+  <div class="row">
+    <div class="col-md-3">
+      {% if member_img_path %}
+      <img src="{{member_img_path}}" class="img-circle-single" alt="...">
+      {% else %}
+      <img src="/assets/svgs/person.svg" class="card-img" style="padding: 25px;" alt="...">
+      {% endif %}
+    </div>
+    <div class="col-md-9">
+      <div class="card-body" style="padding: 1.0em;">
+        <h2>{% if page.short_name == "adam" or page.short_name == "franzi" %}Prof. {% endif %}{{ page.name }}</h1>
+        <h4>{{ page.position }}</h4>
+        {{ content }}
+        {% if page.email %}
+          <a style="margin-top:0.5em" class="btn btn-outline-primary" href="mailto:{{ page.email }}" target="_blank" role="button">Email</a>
+        {% endif %}
+        {% if page.website_url %}
+          <a style="margin-top:0.5em" class="btn btn-outline-primary" href="{{ page.website_url }}" target="_blank" role="button">Website</a>
+        {% endif %}
+        {% if page.twitter %}
+          <a style="margin-top:0.5em" class="btn btn-outline-primary" href="https://twitter.com/{{ page.twitter }}" target="_blank" role="button">Twitter</a>
+        {% endif %}
+        {% if page.linkedin %}
+          <a style="margin-top:0.5em" class="btn btn-outline-primary" href="https://linkedin.com/in/{{ page.linkedin }}" target="_blank" role="button">LinkedIn</a>
+        {% endif %}
+        {% if page.google_scholar %}
+          <a style="margin-top:0.5em" class="btn btn-outline-primary" href="https://scholar.google.com/citations?user={{ page.google_scholar }}" target="_blank" role="button">Google Scholar</a>
+        {% endif %}
+        {% if page.cv_url %}
+          <a style="margin-top:0.5em" class="btn btn-outline-primary" href="{{ page.cv_url }}" target="_blank" role="button">CV</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <h2>Posts</h2>
+<ul>
+  {% assign filtered_posts = site.posts | where: 'author', page.short_name %}
+  {% for post in filtered_posts %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul> -->
+
+{% assign namelist = page.name | split: " " %}
+{% assign lastname = namelist[1] %}
+{% assign firstname = namelist[0] %}
+{% capture num_pubs_str %}{% bibliography_count -f papers -q @*[author ~= {{lastname}} && author ~= {{firstname}}]* %}{% endcapture %}
+{% assign num_pubs = num_pubs_str | plus: 0 %}
+
+<!--<h2>{{num_pubs}}</h2>-->
+<!--<h2>{{lastname}}</h2>-->
+<!--<h2>{{firstname}}</h2>-->
+
+
+{% if num_pubs > 0%}
+<h2>Papers</h2>
+
+{% bibliography -f papers -q @*[author ~= {{lastname}} && author ~= {{firstname}}]* %}
+
+{% endif %}
+
+<!--{% for y in site.years %}-->
+<!--  <h2>{{y}}</h2>-->
+<!--  {% capture num_pubs_str_year %}{% bibliography -f papers -q @*[year={{y}} && author ~= {{lastname}}]* %}{% endcapture %}-->
+<!--  {% assign num_pubs_year = num_pubs_str_year | plus: 0 %}-->
+
+<!--  <h2>{{num_pubs_year}}</h2>-->
+<!--  {% if num_pubs_year > 0%}-->
+<!--    <hr />-->
+<!--    <h3  id="{{y}}" class="pubyear">{{y}}</h3>-->
+<!--  {% bibliography -f papers -q @*[year={{y}} && author ~= {{lastname}} && author ~= {{firstname}}]* %}-->
+<!--  {% endif %}-->
+<!--{% endfor %}-->
+

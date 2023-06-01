@@ -13,7 +13,7 @@ Here, we share 99 advices on Ph.D. life based on our prior experience. We cover 
 
 
 
-{% for post in site.phdlife reversed%}
+{% for post in site.posts.phdlife reversed%}
 
 ### [{{ post.title | escape }}]({{ post.url | relative_url }})
 

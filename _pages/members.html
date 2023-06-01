@@ -1,0 +1,73 @@
+---
+title: Members
+---
+
+<div class="people">
+
+    <div class="group-members">
+
+        <div class="container">
+            <h1 class="category-title">Principal Investigators</h1>
+            <div class="row justify-content-center">
+                {% assign pis = site.members | where: 'position', 'Principal Investigator' %}
+                {% for pi in pis %}
+                <div class="col-md-4 col-centered justify-content-center">
+                    <a href="{{pi.url}}">
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <img src="/assets/images/members/{{ pi.short_name }}.jpg" class="img-circle">
+                                <h1>{{ pi.name }}</h1>
+                                <h3 class="job-title">Professor</h3>
+                                <h4 class="email"> {{pi.email}}</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+
+         <div class="people-container">
+            <div class="container">
+                <!-- List of graduate students -->
+                <h1 class="category-title">Lab Members</h1>
+                {% assign count = 0 %} <!-- Initialize variable that counts to X -->
+                {% assign current_members = site.members | where: 'active', true %}
+                {% for person in current_members %}
+
+                {% assign count = count | plus: 1 %} <!-- Increment -->
+
+                {% if forloop.first %} <!-- If this is the first item, start a row -->
+                <div class="row justify-content-center">
+                    {% else %}
+                    {% endif %}
+
+                    <div class="col-md-4 col-centered">
+                        <a href="{{person.url}}">
+                            <div class="thumbnail">
+                                <div class="caption">
+                                    <img src="/assets/images/members/{{ person.short_name }}.jpg" class="img-circle">
+                                    <h2>{{ person.name }}</h2>
+                                    <h3 class="job-title">{{person.position}}</h3>
+                                    <h4 class="email">{{ person.email}}</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    {% if count >= 3 and forloop.last == false %}
+                    <!-- If we've reached a multiple of X, end this row and start a new one, unless this is the last item -->
+                </div>
+                <div class="row justify-content-center">
+                    {% assign count = 0 %} <!-- Reset the count -->
+                    {% elsif forloop.last %}
+                </div> <!-- End the row if this is the last item -->
+                {% endif %}
+
+                {% endfor %}
+            </div>
+       </div>
+
+    </div>
+</div>
