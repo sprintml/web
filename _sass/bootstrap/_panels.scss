@@ -5,16 +5,16 @@
 
 // Base class
 .panel {
+  border: 0px;
   margin-bottom: $line-height-computed;
   background-color: $panel-bg;
-  border: 1px solid transparent;
-  border-radius: $panel-border-radius;
-  @include box-shadow(0 1px 1px rgba(0,0,0,.05));
 }
 
 // Panel contents
 .panel-body {
   padding: $panel-body-padding;
+  border: 0px solid transparent;
+    border-width: 0px 0px 0px 0px;
   @include clearfix;
 }
 
@@ -45,12 +45,16 @@
   }
 }
 
+
 // Optional footer (stays gray in every modifier class)
 .panel-footer {
+    position: absolute;
+    bottom: 0;
+  width: 100%;
+  border: solid #DCDCDC;
+  border-width: 2px 0px 0px 0px;
   padding: $panel-footer-padding;
-  background-color: $panel-footer-bg;
-  border-top: 1px solid $panel-inner-border;
-  @include border-bottom-radius(($panel-border-radius - 1));
+  background-color: white;
 }
 
 
@@ -65,7 +69,7 @@
     margin-bottom: 0;
 
     .list-group-item {
-      border-width: 1px 0;
+      border-width: 0px 0;
       border-radius: 0;
     }
 
@@ -96,9 +100,6 @@
   .list-group-item:first-child {
     border-top-width: 0;
   }
-}
-.list-group + .panel-footer {
-  border-top-width: 0;
 }
 
 // Tables in panels
@@ -165,7 +166,7 @@
   > .panel-body + .table-responsive,
   > .table + .panel-body,
   > .table-responsive + .panel-body {
-    border-top: 1px solid $table-border-color;
+    border-top: 3px solid $table-border-color;
   }
   > .table > tbody:first-child > tr:first-child th,
   > .table > tbody:first-child > tr:first-child td {
@@ -237,16 +238,11 @@
 
     + .panel-collapse > .panel-body,
     + .panel-collapse > .list-group {
-      border-top: 1px solid $panel-inner-border;
+
     }
   }
 
-  .panel-footer {
-    border-top: 0;
-    + .panel-collapse .panel-body {
-      border-bottom: 1px solid $panel-inner-border;
-    }
-  }
+
 }
 
 

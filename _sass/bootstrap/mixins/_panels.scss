@@ -17,6 +17,8 @@
     }
   }
   & > .panel-footer {
+        border: solid #DCDCDC;
+    border-width: 4px 0px 0px 0px;
     + .panel-collapse > .panel-body {
       border-bottom-color: $border;
     }
