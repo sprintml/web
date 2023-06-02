@@ -9,7 +9,7 @@
 {% endif %}
 {% endfor %}
 {% if mem %}
-<a href="{{ mem.url }}">{{mem.name}}</a>{% unless forloop.last %},{% endunless %}
+<a href="{{ mem.website_url }}">{{mem.name}}</a>{% unless forloop.last %},{% endunless %}
 {% else %}
 {{author.first}} {{author.last}}{% unless forloop.last %},{% endunless %}
 {% endif %}
