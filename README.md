@@ -1,11 +1,10 @@
-# Allan Lab Website
+# SprintML Website
 
-This is the website of our academic research group at Leiden University.
+This is the academic website of the SprintML lab at CISPA.
 
-This website is powered by Jekyll and some Bootstrap, Bootwatch. We tried to make it simple yet adaptable, so that it is easy for you to use it as a template. Plese feel free to copy and modify for your own purposes.  You don't have to link to us or mention us (but of course we appreciate it).
+The template for the website was forked and adapted from the [Allan Lab](https://github.com/mpa139/allanlab/tree/gh-pages).
+The underlying frameworks are Jekyll and some Bootstrap, Bootwatch. 
 
-Go to *aboutwebsite.md*  to learn how to copy and modidy this page for your purpose. 
+Please reach out to [Adam Dziedzic](https://adam-dziedzic.com/) and [Franziska Boenisch](https://franziska-boenisch.de/) for comments or concerns.
 
-
-Copyright Allan Lab. Code released under the MIT License.
 
