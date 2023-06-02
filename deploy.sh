@@ -5,7 +5,7 @@ bundle exec jekyll build --destination docs
 git pull
 git add *
 git commit -am "deploy at timestamp: ${timestamp}"
-git push origin master
+git push
 
 # save the absolute path of the current working directory to the variable cwd
 cwd=$(pwd)
