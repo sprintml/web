@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "99 days to go: A PhD - is that for me?"
+title:  "99 days to go: A Ph.D. - is that for me?"
 date:   2023-05-26
 tags: phd life, decision, motivation
 ---

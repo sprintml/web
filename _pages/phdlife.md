@@ -17,5 +17,5 @@ share, please reach out!
 
 ### [{{ post.title | escape }}]({{ post.url | relative_url }})
 
-Published: {{ post.date | date: "%b %-d, %Y" }}
+<img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/calendar.svg" width="15" height="15"> Published: {{ post.date | date: "%b %-d, %Y" }}
 {% endfor %}
