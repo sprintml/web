@@ -1,6 +1,6 @@
 ---
 title: "SprintML Lab - Team"
-layout: gridlay
+layout: textlay
 excerpt: "SprintML Lab: Team"
 sitemap: false
 permalink: /team/
