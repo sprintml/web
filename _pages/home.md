@@ -9,7 +9,7 @@ permalink: /
 Introducing the SprintML Lab
 ----------------------------
 
-We are the SprintML lab with a research focus on Secure, Private, Robust, INterpretable, and Trustworthy Machine Learning. The lab is jointly led by Professors [Adam Dziedzic](https://adam-dziedzic.com/) & [Franziska Boenisch](https://franziska-boenisch.de/). We are located at the [CISPA Helmholtz Center for Information Security](https://cispa.de/en) in Saarbrücken, Germany. Get to know [our team](members.html) and find out about [our latest research](../publications.html).
+We are the SprintML lab with a research focus on Secure, Private, Robust, INterpretable, and Trustworthy Machine Learning. The lab is jointly led by Professors [Adam Dziedzic](https://adam-dziedzic.com/) & [Franziska Boenisch](https://franziska-boenisch.de/). We are located at the [CISPA Helmholtz Center for Information Security](https://cispa.de/en) in Saarbrücken, Germany. Get to know [our team](https://sprintml.com/team/) and find out about [our latest research](https://sprintml.com/publications/).
 
 Join SprintML!
 --------------
