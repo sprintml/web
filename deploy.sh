@@ -12,7 +12,6 @@ cwd=$(pwd)
 
 # go to the webpage public repo and push the changes
 cd ../sprintml.github.io
-git pull -f
 
 rm -rf docs
 # move the docs to the webpage public repo
@@ -20,6 +19,6 @@ cp -r ../web/docs .
 
 git add *
 git commit -am "deploy at timestamp: ${timestamp}"
-git push origin main -f
+git push -f origin main
 
 cd ${cwd}
