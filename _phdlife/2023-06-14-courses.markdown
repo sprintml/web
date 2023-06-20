@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "80 days to go: What are the (right) courses to take during your PhD?"
+date:   2023-06-14
+tags: phd life, research, courses 
+---
+
+*by Franziska Boenisch and Adam Dziedzic*
+
+Ph.D. is the time to carry out research but many universities require you to take courses. The coursework can be turned from an obligation to an opportunity. How can you leverage the courses so that what you learn there contributes to your PhD? 
+
+First, let’s start with a typical structure of coursework. For your program, you might have to complete even up to 9 courses. Many times these are divided into two primary groups: theory and systems. The theory courses are intended to give you good foundations that your research can build on top of and the systems courses are usually giving you more hands-on experience with overview of a specific field (e.g., database systems or distributed systems) and a project to complete. The overarching idea is that you should be a “well-rounded” student after taking such courses and also have broad knowledge of computer science beyond your area of expertise. In many cases, you have a main guideline on what courses are recommended with some freedom of specific courses that fall into one of the required groups. The question is how to approach this so that your research can benefit from it.
+
+The most important aspect is that you already finished at least your bachelor studies and probably had very good grades so now you don’t have to prove to anyone that you can excel in the academic environment in terms of learning new things. Thus, do not sweat small stuff and do not be too concerned about grades. These courses should contribute to your research. 
+
+How to select the courses? The most important criteria is if any of the courses can help you with your research. The best courses are those that cover a very interesting and desirably overlapping topic with your research focus. Find a course that also has a project, which then can be a milestone in your research. For example, if a course is in the form of a seminar where you can read many papers and requires you to complete a project related to the topics covered in class, then such a course is probably one of your best choices. Try to scope a topic for the course project that is possible to be completed during the course and can be part of your next paper or Ph.D. thesis. In class, you can also find a collaborator for your project who would like to help you with your idea. In this case, you can kill two birds with one stone, first, fulfill the requirement of the coursework, and second, most important, progress in your research. 
+
+If the above is not possible, then try to find a course that teaches you more about a topic that you might use in your research. Think strategically, how a material covered by a given professor can help you to solve one of the problems that you struggle in your research or how it can teach you even broader skills on how to do research. If one of the professors is inspiring for you, then take his or her classes to find out how they carry out their research and what makes them successful. One of the professors during our course on discrete mathematics explained how to attack problems, consider many possible solutions, so that when someone finds a hole in your proof, then you can quickly find an amelioration and patch the hole. Talk to your senior Ph.D. friends who already took the courses and find out what they learned. Their recommendations might be invaluable since you can already see how they progressed in their Ph.D.s. Don’t hesitate to talk to your advisor since he or she can also help you to navigate the coursework and prepare a plan on how to complete it so that you fulfill the requirements and stay on track with your research. Finally, enjoy the experience and the fulfillment of learning something new. 
+

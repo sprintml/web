@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "84 days to go: How to keep track of the papers you read?"
-date:   2023-06-09
+date:   2023-06-10
 tags: phd life, papers, keep track
 ---
 

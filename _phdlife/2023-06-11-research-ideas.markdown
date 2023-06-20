@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "83 days to go: How to generate and keep track of your research ideas?"
-date:   2023-06-09
+date:   2023-06-11
 tags: phd life, papers, research ideas
 ---
 
