@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "77 days to go: How to design research experiments?"
+date:   2023-06-17
+tags: phd life, research experiments
+---
+
+*by Franziska Boenisch and Adam Dziedzic*
+
+Now that you started your Ph.D., found a topic that interests you, and are about to start your own research, you are probably wondering how to identify which research experiments you should run next, and how to design your experiments. We’ve got some general tips for you.
+
+What are research experiments for? In short, they are there to validate (or disprove) some hypothesis that you should formulate beforehand. You have to consider what the objective of your experiment is and what the expected outcome is. In some cases, once you have enough experience, you might be able to run this experiment in your head instead of on a machine, which is way faster. A good experiment doesn't have to run long or require you to run a lot of code. Especially at initial stages of a project, you might want to implement a prototype and quickly check how it performs. This will give you a good understanding if the idea is worth pursuing further.
+
+Let us consider a concrete running example. Recently, we published a paper on how to [integrate differential privacy (DP) with prompts for Large Language Models (LLMs)](https://arxiv.org/pdf/2305.15594.pdf). One type of the prompts are soft prompts, which you can think of as additional vectors that are added to the inputs and optimized using gradient descent. We knew that the soft prompts can be trained without DP but we didn't know how they would perform once DP is added. Our hunch was that they should perform well. We implemented the private training for prompts and then wanted to check how they perform on a few tasks. The initial experimental results were much worse than expected. The implementation seemed to be correct and the experiement was executed thouroughly. The only problem might have been (hyper)parameters. It took us a few days of fine-tuning the parameters to find ones that produce expected results. On the one hand, we were guided by our previous experience, which suggested that this combination of prompts with privacy should work - the only question was how well it would perform. On the other hand, we were conscientious and determined enough to spend long time on parameter search to show that our method can achieve state-of-the-art performance while giving many additional benefits over the previous methods.
+
+What are the lessons from the above use case? The more experience you gain, the more predictable are results of your experiments and you are also more confident about where to direct your efforts to achieve satisfying results. Our hypothesis was formulated before we even wrote the first line of code and it was clear to us that it should be true, which is rather on a much more positive and motivating side. Our work was primarily focused on how to tune the method, especially the parameters, to obtain satifsfying results. A helpful aspect of the experimentation was to prepare a table that we wanted to fill with numbers after running our experiments. Once you have such a plan, your experiments are heading toward sucess since they are thorough enough and with a clearly defined goal.
