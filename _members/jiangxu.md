@@ -1,6 +1,6 @@
 ---
-short_name: jiangxu
-name: Jiang Xu
+short_name: jingxu
+name: Jing Xu
 position: Postdoc
 active: true
 email: jiang.xu@cispa.de
