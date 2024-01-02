@@ -60,7 +60,7 @@ layout: default
                     {% if count >= 3 and forloop.last == false %}
                     <!-- If we've reached a multiple of X, end this row and start a new one, unless this is the last item -->
                 </div>
-                <div class="row justify-content-center">
+                <div class="row-centered justify-content-center">
                     {% assign count = 0 %} <!-- Reset the count -->
                     {% elsif forloop.last %}
                 </div> <!-- End the row if this is the last item -->
