@@ -21,3 +21,43 @@ Finally, we would like to acknowledge other academic pages that inspired the des
 
 Please reach out to [Adam Dziedzic](https://adam-dziedzic.com/) and [Franziska Boenisch](https://franziska-boenisch.de/)
 for comments or concerns.
+
+## Edits
+
+Deploy the website:
+```shell
+bash deploy.sh
+```
+
+Build and serve the site locally:
+```shell
+bundle exec jekyll serve --host localhost --port 4000 --incremental --livereload --destination docs
+```
+
+Build the site for deployment:
+```shell
+jekyll build --destination docs
+```
+
+Ultimate command, never fails and rebuilds everything from scratch:
+
+```shell
+bundle exec jekyll serve --force_polling --livereload --trace --destination docs --incremental
+```
+
+On Windows:
+
+```shell
+bundle exec jekyll serve --force_polling --livereload --incremental --destination docs
+```
+
+Do Live reload:
+
+```shell
+bundle exec jekyll serve --port 5000 --incremental --livereload --destination docs
+```
+
+`--incremental` Incremental regeneration helps shorten build times by only
+generating documents and pages that were updated since the previous build.
+
+`--livereload` reload lively after every change
