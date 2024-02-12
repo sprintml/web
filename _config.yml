@@ -11,7 +11,7 @@ email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Website of the SprintML lab.
 baseurl: ""
-url: "https://sprintml.com"
+url: ""
 
 include:
   - .htaccess
