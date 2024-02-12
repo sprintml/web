@@ -1,7 +1,7 @@
 ---
 title: "SprintML Lab - Home"
 layout: homelay
-excerpt: "SprintML Lab at CISPA."
+#excerpt: "SprintML Lab at CISPA."
 sitemap: false
 permalink: /
 ---
