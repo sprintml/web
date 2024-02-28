@@ -3,7 +3,7 @@ short_name: jingxu
 name: Jing Xu
 position: Postdoc
 active: true
-email: jiang.xu@cispa.de
+email: jing.xu@cispa.de
 twitter: https://twitter.com/JingXu90463267
 linkedin: https://www.linkedin.com/in/jing-xu-aa66871b0/
 google_scholar: https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=wif33rcAAAAJ&sortby=pubdate
